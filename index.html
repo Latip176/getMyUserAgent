@@ -7,13 +7,6 @@
   <body>
     <h1 align="center">Information Your Device</h1>
     <p style="font-size:25px;"> > Your ip : <span id="ip"></span> <br/> > Your UserAgent : <span id="UserAgent"></span></p>
-    <script type="text/javascript">
-      var userAgent = window.navigator.userAgent;
-      (async () => {
-      var ip = (await fetch("https://api.ipify.org/?format=json").then(r => r.json())).ip;
-        document.getElementById("ip").innerHTML = ip;
-      })();
-      document.getElementById("UserAgent").innerHTML = userAgent;
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
